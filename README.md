@@ -1,18 +1,18 @@
-## Team Name: TBD
+## Team Name: VAST
 
-## Project Name: TBD
+## Project Name: EFT Maps
 
 ## Project Description:
-TBD (e.g., build a TBD app for TBD)
+Build a web app with interactive maps for Escape from Tarkov
 
 ## Team Members:
 
 Last Name       | First Name      | GitHub Username    | Scrum Role
 --------------- | --------------- | ------------------ | ---------------
-TBD             | TBD             | TBD                | TBDDeveloper
-TBD             | TBD             | TBD                | TBDScrum Master
-TBD             | TBD             | TBD                | TBDProduct Owner
-TBD             | TBD             | TBD                | TBD
+Poulsen         | Taylor          | tpoulsen93         | TBDDeveloper
+Cerda           | Victor          | TBD                | TBDScrum Master
+Leuck           | Aidan           | TBD                | TBDProduct Owner
+Moran           | Sunny           | TBD                | TBD
 
 ## :eyes: :memo: Scrum Linter Reports:
 Access the [Scrum Linter Report](http://cs.boisestate.edu/~bdit/ScrumLinter/CS471F21ScrumLinterReports/CS471-F21-Team3_EyEVMugSoaJ7sP7WbNyneeByUmBCYPOkTGlll9vC/). A new report will be automatically generated every few hours.
