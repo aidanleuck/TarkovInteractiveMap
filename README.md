@@ -9,10 +9,10 @@ Build a web app with interactive maps for Escape from Tarkov
 
 Last Name       | First Name      | GitHub Username    | Scrum Role
 --------------- | --------------- | ------------------ | ---------------
-Poulsen         | Taylor          | tpoulsen93         | TBDDeveloper
-Cerda           | Victor          | TBD                | TBDScrum Master
-Leuck           | Aidan           | TBD                | TBDProduct Owner
-Moran           | Sunny           | TBD                | TBD
+Poulsen         | Taylor          | tpoulsen93         | Developer
+Cerda           | Victor          | vmcerda            | Scrum Master
+Leuck           | Aidan           | aidanleuck         | Product Owner
+Moran           | Sunny           | sunnymoran         | Developer
 
 ## :eyes: :memo: Scrum Linter Reports:
 Access the [Scrum Linter Report](http://cs.boisestate.edu/~bdit/ScrumLinter/CS471F21ScrumLinterReports/CS471-F21-Team3_EyEVMugSoaJ7sP7WbNyneeByUmBCYPOkTGlll9vC/). A new report will be automatically generated every few hours.
