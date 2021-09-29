@@ -9,8 +9,8 @@ Build a web app with interactive maps for Escape from Tarkov
 
 Last Name       | First Name      | GitHub Username    | Scrum Role
 --------------- | --------------- | ------------------ | ---------------
-Poulsen         | Taylor          | tpoulsen93         | Developer
 Cerda           | Victor          | vmcerda            | Scrum Master
+Poulsen         | Taylor          | tpoulsen93         | Developer
 Leuck           | Aidan           | aidanleuck         | Product Owner
 Moran           | Sunny           | sunnymoran         | Developer
 
