@@ -9,10 +9,12 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "client": "npm start --prefix ../client",
+    "server": "nodemon server.js",
+    "application": "concurrently \"npm run client\" \"npm run server\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC"
 }
-
