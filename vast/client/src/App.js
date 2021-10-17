@@ -24,7 +24,7 @@ state = {
 
   render() {
     return (
-      <ViewController zoomFactor="0.1" maxZoom = "4.0"></ViewController>
+      <ViewController zoomFactor="0.1" maxZoom = "4.0" minZoom = "1.0"></ViewController>
     );
   }
 }
