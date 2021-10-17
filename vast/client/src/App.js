@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {ViewController} from "./components/ViewController.js"
-import image from './Images/map.png'
+import image from './Images/customsMap.jpg'
 
 function App() {
  

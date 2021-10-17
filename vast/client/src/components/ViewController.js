@@ -1,6 +1,6 @@
 import React from 'react';
 import {useZoom} from '../helperFunctions/panAndZoomHook';
-import image from '../Images/map.png'
+import image from '../Images/customsMap.jpg'
 import '../CSS/map.css'
 
 // Main functional component that holds state of the map view
@@ -25,7 +25,7 @@ export const ViewController = () =>{
               <div
                 style={{
                   WebkitTransform: `translate(${translateX}px, ${translateY}px) scale(${scale})`,
-                  WebkitTransition: '.5s ease-in-out'
+                  WebkitTransition: '.5s ease-in-out .1s'
                 }}
               >
                 <img
