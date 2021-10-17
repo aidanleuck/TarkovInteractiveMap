@@ -6,7 +6,7 @@ export const initialState = {
     translateY: 0,
     prevMouseX: 0,
     prevMouseY: 0,
-    scale: 1,
+    scale: 1.5,
 }
 
 // Handler that determines what method should be called
@@ -29,13 +29,27 @@ export const hookHandler = (state, action) => {
             else{
                 return{...state}
             }
-            
+            case types.START_PAN:
+                return{
+                 ...state,
+                 prevMouseX: action.clientX,
+                 prevMouseY: action.clientY
+                }
+                
+            case types.PAN:
+                const changeX = action.clientX - state.prevMouseX
+                const changeY = action.clientY - state.prevMouseY
+                return {...state,
+                    translateX: state.translateX + changeX,
+                    translateY: state.translateY + changeY,
+                    prevMouseX: action.clientX,
+                    prevMouseY: action.clientY
+                }
             default:
                 return {...state,
                 scale:state.scale,
                 translateX: state.translateX,
-                translateY: state.translateY}
-            
+                translateY: state.translateY}      
         
     }
 };

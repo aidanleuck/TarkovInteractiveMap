@@ -6,7 +6,9 @@ const MAX_ZOOM = 4;
 
 // Keeps track of each type of functions that can be called
 export const types = {
-    ZOOM: 'ZOOM'
+    ZOOM: 'ZOOM',
+    START_PAN: 'START_PAN',
+    PAN: 'PAN',
 }
 
 // Gets default states for zoom
@@ -19,3 +21,13 @@ export const zoom = (event, containerRect)=>({
     clientY: event.clientY,
     containerRect: containerRect
 });
+export const startPan = (event) =>({
+    type: types.START_PAN,
+    clientX: event.clientX,
+    clientY: event.clientY
+})
+export const pan = (event) =>({
+    type: types.PAN,
+    clientX: event.clientX,
+    clientY: event.clientY
+})

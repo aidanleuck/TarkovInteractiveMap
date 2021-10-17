@@ -1,6 +1,6 @@
 import { useRef, useReducer } from 'react'
 import { initialState, hookHandler } from './hookHandler'
-import {zoom} from './actions'
+import {startPan, zoom, pan} from './actions'
 
 // Custom hook to handle zooming in and out
 export const useZoom = () =>{
@@ -19,12 +19,31 @@ export const useZoom = () =>{
 
             // Dispatch the event to the hook handler
             dispatch(zoom(event, imageContainerRect))
-        }
+        } 
+    }
+    const onMouseMove = (event)=>{
+        console.log(event)
+        event.preventDefault();
+        dispatch(pan(event))
+
+    }
+    const onMouseUpInWindow =(event) =>{
+        window.removeEventListener('mouseup', onMouseUpInWindow)
+        window.removeEventListener('mousemove', onMouseMove)
+    }
+    const onMouseDown = (event) =>{
+        event.preventDefault();
+        dispatch(startPan(event))
+        window.addEventListener('mouseup' ,onMouseUpInWindow)
+        window.addEventListener('mousemove', onMouseMove)
+        
     }
     return {
         ...state,
         imageContainerRef,
-        onWheel
+        onWheel,
+        onMouseDown
+        
       }
 
     

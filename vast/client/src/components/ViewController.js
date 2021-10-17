@@ -9,6 +9,7 @@ export const ViewController = () =>{
     const{
         imageContainerRef,
         onWheel,
+        onMouseDown,
         translateX,
         translateY,
         scale,
@@ -19,6 +20,7 @@ export const ViewController = () =>{
               className="Image-container"
               ref={imageContainerRef}
               onWheel={onWheel}
+              onMouseDown = {onMouseDown}
             >
               <div
                 style={{
