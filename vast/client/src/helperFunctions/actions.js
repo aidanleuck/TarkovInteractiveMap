@@ -12,22 +12,28 @@ export const types = {
 }
 
 // Gets default states for zoom
-export const zoom = (event, containerRect)=>({
+export const zoom = (event, containerRect, window)=>({
     type: types.ZOOM,
     zoomFactor: event.deltaY < 0 ? ZOOMFACTOR_IN : ZOOMFACTOR_OUT,
     minZoom: MIN_ZOOM,
     maxZoom: MAX_ZOOM,
     clientX: event.clientX,
     clientY: event.clientY,
-    containerRect: containerRect
+    containerRect: containerRect,
+    window: window
 });
-export const startPan = (event) =>({
+export const startPan = (event, window, containerRect) =>({
     type: types.START_PAN,
     clientX: event.clientX,
-    clientY: event.clientY
+    clientY: event.clientY,
+    window: window,
+    containerRect: containerRect
+
 })
-export const pan = (event) =>({
+export const pan = (event, window, containerRect) =>({
     type: types.PAN,
     clientX: event.clientX,
-    clientY: event.clientY
+    clientY: event.clientY,
+    window: window,
+    containerRect: containerRect
 })

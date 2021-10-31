@@ -17,14 +17,23 @@ export const useZoom = () =>{
             // Gets the bounding rectangle around the container
             const imageContainerRect = imageContainerRef.current.getBoundingClientRect();
 
+            const imageContainerWidth = imageContainerRef.current.clientWidth;
+            const imageContainerHeight = imageContainerRef.current.clientHeight;
+            const windowSize = {imageContainerWidth, imageContainerHeight};
+
             // Dispatch the event to the hook handler
-            dispatch(zoom(event, imageContainerRect))
+            dispatch(zoom(event, imageContainerRect, windowSize))
         } 
     }
     const onMouseMove = (event)=>{
-        console.log(event)
         event.preventDefault();
-        dispatch(pan(event))
+        const imageContainerWidth = imageContainerRef.current.clientWidth;
+        const imageContainerHeight = imageContainerRef.current.clientHeight;
+
+        // Gets the bounding rectangle around the container
+        const imageContainerRect = imageContainerRef.current.getBoundingClientRect();
+        const windowSize = {imageContainerWidth, imageContainerHeight};
+        dispatch(pan(event, windowSize, imageContainerRect))
 
     }
     const onMouseUpInWindow =(event) =>{
@@ -33,7 +42,14 @@ export const useZoom = () =>{
     }
     const onMouseDown = (event) =>{
         event.preventDefault();
-        dispatch(startPan(event))
+        const imageContainerWidth = imageContainerRef.current.clientWidth;
+        const imageContainerHeight = imageContainerRef.current.clientHeight;
+
+        const windowSize = {imageContainerWidth, imageContainerHeight};
+        // Gets the bounding rectangle around the container
+        const imageContainerRect = imageContainerRef.current.getBoundingClientRect();
+
+        dispatch(startPan(event, windowSize, imageContainerRect))
         window.addEventListener('mouseup' ,onMouseUpInWindow)
         window.addEventListener('mousemove', onMouseMove)
         

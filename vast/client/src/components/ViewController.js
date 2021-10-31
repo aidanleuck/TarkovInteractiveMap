@@ -25,7 +25,7 @@ export const ViewController = () =>{
               <div
                 style={{
                   WebkitTransform: `translate(${translateX}px, ${translateY}px) scale(${scale})`,
-                  WebkitTransition: '.5s ease-in-out .1s'
+                  WebkitTransition: '.5s ease-in-out .1s',
                 }}
               >
                 <img
