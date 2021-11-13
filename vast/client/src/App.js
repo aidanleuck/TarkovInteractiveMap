@@ -5,8 +5,10 @@ import { Marker, ViewMarker } from './components/Marker.js';
 import image from './Images/customsMap.jpg'
 import {Header} from "./components/Header.js"
 function App() {
+  
  // return ViewController({image});
- return ViewToolBar();
+    return ViewMarker();
+     
 }
  
 export default App

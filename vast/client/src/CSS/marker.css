@@ -4,8 +4,19 @@ h1{
     
 .main{
 border-style: solid;
+text-align: center;
 }
 
-div{
-    text-align: center;   
+.buttons div button{
+    width:100%;
 }
+
+.buttons{
+    margin-bottom:20px;
+}
+.buttons div button:hover{
+    background-color: #4d4a49;
+}
+
+
+
