@@ -7,7 +7,7 @@ import {Header} from "./components/Header.js"
 function App() {
   
  // return ViewController({image});
-    return ViewMarker();
+    return ViewToolBar();
      
 }
  

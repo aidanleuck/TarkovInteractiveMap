@@ -1,26 +1,39 @@
+h1{
+  text-align:center;
+}
+
+
+
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
+    width: 100%;
+    background-color: black;
     align-items: center;
   }
   
   li a {
     display: block;
-    color: #000;
-    padding: 8px 16px;
+    color: white;
+    padding: 8px 0px;
     text-decoration: none;
     text-align: center;
   }
   
+.buttons div button{
+  margin-bottom:10px;
+}
 
-  li a:hover {
-    background-color: #555;
-    color: white;
-  }
+ .buttons div button{  
+  width:100%;
+}
 
- button{
-     text-align: center;
- }
+li a:hover {
+  background-color: white;
+  color: black;
+  border-style:solid;
+}
+
+a:hover{
+  border:solid black;
+}
+
