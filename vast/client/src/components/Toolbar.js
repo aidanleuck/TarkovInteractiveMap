@@ -13,7 +13,6 @@ return(
         <div class="col-3"><button type="button" class="btn btn-dark" onclick="">Floor Level</button></div>
         <div class="col-3"><button type="button" class="btn btn-dark" onclick="">Different Map Versions</button></div>
         <div class="col-3"><h1>Progress Tracker</h1></div>
-        <div class="col-3"><button type="button" class="btn btn-dark" onclick="">Sign in</button></div>
         <div class="col-3">
           <ul>
             <li><a href="#Quest 1">Quest 1</a></li>
