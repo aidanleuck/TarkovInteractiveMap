@@ -7,8 +7,8 @@ import {Header} from "./components/Header.js"
 function App() {
   
  // return ViewController({image});
-    return ViewToolBar();
-     
+ // return ViewMarker();
+    return Header();     
 }
  
 export default App
