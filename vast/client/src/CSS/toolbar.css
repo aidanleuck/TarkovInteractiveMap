@@ -1,7 +1,14 @@
 h1{
   text-align:center;
+  outline-style:groove;
+  color: white;
+  background-color: black;
+  border-color:black;
 }
 
+.container-fluid{
+  padding-top: 150px;
+}
 
 
 ul {
@@ -19,9 +26,9 @@ ul {
     text-align: center;
   }
   
-.buttons div button{
+/* .buttons div button{
   margin-bottom:10px;
-}
+} */
 
  .buttons div button{  
   width:100%;
