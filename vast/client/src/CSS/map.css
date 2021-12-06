@@ -19,7 +19,7 @@ body{
 .Image-container{
     width: 100vw;
     height: 100vh;
-    
+    padding-top: 56px;   
 }
 .viewPort{
     height:100vh;

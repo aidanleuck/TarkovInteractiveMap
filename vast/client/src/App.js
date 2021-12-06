@@ -6,24 +6,13 @@ import image from './Images/customsMap.jpg'
 import {Header} from "./components/Header.js"
 import './CSS/app.css'
 function App() {
-  
- // return ViewController({image});
-    // return ViewMarker();
-  
     return (
         <div>
-            <div class="position-fixed" >
-                
-                <ViewToolBar/>
-                
-            </div>
-            <div>
-                <ViewController />
-            </div>
+            <Header/>
+            <ViewToolBar/>
+            <ViewController/>
         </div>
-    ) 
-        
-
+    ); 
 }
  
 export default App

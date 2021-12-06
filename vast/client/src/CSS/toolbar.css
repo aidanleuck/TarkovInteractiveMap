@@ -6,11 +6,6 @@ h1{
   border-color:black;
 }
 
-.container-fluid{
-  padding-top: 150px;
-}
-
-
 ul {
     list-style-type: none;
     width: 100%;
@@ -30,7 +25,11 @@ ul {
   margin-bottom:10px;
 } */
 
- .buttons div button{  
+.toolbar {
+    padding-top: 150px;
+}
+
+.buttons div button{  
   width:100%;
 }
 
