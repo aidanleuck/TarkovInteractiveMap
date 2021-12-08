@@ -17,6 +17,10 @@ text-align: center;
 .buttons div button:hover{
     background-color: #4d4a49;
 }
+.top{
+    z-index: 1;
+    bottom:0
+}
 
 
 
